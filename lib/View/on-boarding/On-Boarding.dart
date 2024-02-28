@@ -53,6 +53,7 @@ class OnBoarding extends StatelessWidget {
                     (property) => Card(
                       borderOnForeground: true,
                       elevation: 3.0,
+                      color: Colors.white,
                       surfaceTintColor: Colors.white,
                       child: ListTile(
                         leading: property.icon,
