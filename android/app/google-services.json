@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "404605618523",
+    "project_id": "propertynonstop-74f52",
+    "storage_bucket": "propertynonstop-74f52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404605618523:android:430efd78ca93b0e2cbf27e",
+        "android_client_info": {
+          "package_name": "com.example.propertynonstop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCdmIOehPVirtXGP_K9KD2wnFN5IdtYnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
