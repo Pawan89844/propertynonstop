@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:propertynonstop/View/auth/login.dart';
 import 'package:firebase_core/firebase_core.dart' as firebase;
+import 'package:propertynonstop/View/on-boarding/On-Boarding.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +18,7 @@ class PropertyNonStop extends StatelessWidget {
     return MaterialApp(
       title: 'Property Non Stop',
       theme: ThemeData(useMaterial3: true),
-      home: Login(),
+      home: OnBoarding(),
       debugShowCheckedModeBanner: false,
     );
   }

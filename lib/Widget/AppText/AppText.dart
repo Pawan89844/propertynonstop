@@ -5,11 +5,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppText extends StatelessWidget {
   final String data;
-  const AppText({super.key, required this.data});
+  final Color? color;
+  final FontWeight? fontWeight;
+  const AppText({super.key, required this.data, this.color, this.fontWeight});
 
   @override
   Widget build(BuildContext context) {
     return Text(data,
-        textAlign: TextAlign.center, style: GoogleFonts.openSans());
+        textAlign: TextAlign.center,
+        style: GoogleFonts.openSans(color: color, fontWeight: fontWeight));
   }
 }
