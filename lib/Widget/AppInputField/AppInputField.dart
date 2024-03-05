@@ -6,7 +6,9 @@ import 'package:google_fonts/google_fonts.dart';
 class AppInputField extends StatelessWidget {
   final TextEditingController? controller;
   final String? hintText;
-  const AppInputField({super.key, this.controller, this.hintText});
+  final void Function(String)? onFieldSubmitted;
+  const AppInputField(
+      {super.key, this.controller, this.hintText, this.onFieldSubmitted});
 
   OutlineInputBorder border() {
     return OutlineInputBorder(
@@ -20,6 +22,7 @@ class AppInputField extends StatelessWidget {
       height: 50.0,
       child: TextFormField(
         controller: controller,
+        onFieldSubmitted: onFieldSubmitted,
         decoration: InputDecoration(
             border: border(),
             focusedBorder: border(),

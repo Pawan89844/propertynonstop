@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:propertynonstop/View/auth/SignUp.dart';
 import 'package:propertynonstop/View/post-properties/View-Model/Post-Properties-View-Model.dart';
 import 'package:propertynonstop/Widget/AppInputField/AppInputField.dart';
 import 'package:propertynonstop/Widget/AppText/AppHeadingText.dart';
@@ -59,7 +60,14 @@ class _PostPropertiesState extends State<PostProperties> {
                       child: const AppHeadingText(
                           data: 'Select your city', fontSize: 16.0)),
                   const SizedBox(height: 10.0),
-                  const AppInputField(hintText: 'Search your city here'),
+                  AppInputField(
+                    hintText: 'Search your city here',
+                    onFieldSubmitted: (value) =>
+                        // TODO - 2 ADD LOGIC AND USE NAVIGATOR 2.0
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const Scaffold(
+                                body: SafeArea(child: SignUp())))),
+                  ),
                   const SizedBox(height: 10.0),
                 ],
               ),
