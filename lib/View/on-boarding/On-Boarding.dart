@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:propertynonstop/View/on-boarding/View-Model/On-Boarding-View-Model.dart';
+import 'package:propertynonstop/View/post-properties/Post-Properties.dart';
 import 'package:propertynonstop/Widget/AppText/AppHeadingText.dart';
 import 'package:propertynonstop/Widget/AppText/AppText.dart';
 
@@ -57,6 +58,11 @@ class OnBoarding extends StatelessWidget {
                       surfaceTintColor: Colors.white,
                       child: ListTile(
                         leading: property.icon,
+                        onTap: () =>
+                            // TODO - 1 REPLACE NAVIGATOR 1.0 TO NAVIGATOR 2.0
+                            Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const PostProperties(),
+                        )),
                         title: Container(
                             alignment: Alignment.centerLeft,
                             child: AppText(
