@@ -7,16 +7,18 @@ class AppHeadingText extends StatelessWidget {
   final String data;
   final FontWeight? fontWeight;
   final double? fontSize;
+  final TextAlign textAlign;
   const AppHeadingText(
       {super.key,
       required this.data,
       this.fontWeight = FontWeight.bold,
-      this.fontSize = 25.0});
+      this.fontSize = 25.0,
+      this.textAlign = TextAlign.center});
 
   @override
   Widget build(BuildContext context) {
     return Text(data,
-        textAlign: TextAlign.center,
+        textAlign: textAlign,
         style: GoogleFonts.playfairDisplay(
             fontWeight: fontWeight, fontSize: fontSize));
   }
