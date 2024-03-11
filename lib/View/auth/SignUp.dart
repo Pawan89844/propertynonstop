@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:propertynonstop/Style/Constants/AppStrings.dart';
+import 'package:propertynonstop/View/post-properties/Property-Info.dart';
 import 'package:propertynonstop/Widget/AppButtons/AppElevatedButton.dart';
 import 'package:propertynonstop/Widget/AppInputField/AppInputField.dart';
 import 'package:propertynonstop/Widget/AppText/AppHeadingText.dart';
@@ -16,7 +17,7 @@ class SignUp extends StatelessWidget {
       child: Column(
         children: [
           const AppHeadingText(
-              data: 'Let us know about you...', fontSize: 22.0),
+              data: AppString.kSignUPHeadingText, fontSize: 22.0),
           const SizedBox(height: 10.0),
           const AppInputField(hintText: AppString.kFullNameText),
           const SizedBox(height: 10.0),
@@ -24,17 +25,21 @@ class SignUp extends StatelessWidget {
           const SizedBox(height: 10.0),
           const AppInputField(hintText: AppString.kCompanyNameText),
           const SizedBox(height: 10.0),
-          const AppInputField(hintText: 'Enter your e-mail'),
+          const AppInputField(hintText: AppString.kSignUpEmailText),
           const SizedBox(height: 10.0),
-          const AppInputField(hintText: 'Business since'),
+          const AppInputField(hintText: AppString.kSignUpBusinessDurationText),
           const SizedBox(height: 10.0),
-          const AppInputField(hintText: 'Create Password'),
+          const AppInputField(hintText: AppString.kSignUpCreatePasswordText),
           const SizedBox(height: 10.0),
-          const AppInputField(hintText: 'Confirm Password'),
+          const AppInputField(hintText: AppString.kSignUpConfirmPasswordText),
           const SizedBox(height: 10.0),
           SizedBox(
               width: double.infinity,
-              child: AppElevatedButton(onPressed: () {}, data: 'Submit'))
+              child: AppElevatedButton(
+                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const PropertyInfo(),
+                      )),
+                  data: 'Submit'))
         ],
       ),
     );

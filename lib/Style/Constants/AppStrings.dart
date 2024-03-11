@@ -9,4 +9,9 @@ class AppString {
   static const String kVerifyOTPText = 'Verify OTP';
   static const String kFullNameText = 'Full Name';
   static const String kCompanyNameText = 'Company Name';
+  static const String kSignUPHeadingText = 'Let us know about you...';
+  static const String kSignUpEmailText = 'Enter your e-mail';
+  static const String kSignUpBusinessDurationText = 'Business since';
+  static const String kSignUpCreatePasswordText = 'Create Password';
+  static const String kSignUpConfirmPasswordText = 'Confirm Password';
 }
