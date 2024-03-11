@@ -149,7 +149,7 @@ class _StepPropertyDetailsState extends State<StepPropertyDetails> {
                                 value: fType.id,
                                 groupValue: _selectedFurnishedType,
                                 onChanged: (propSize) {
-                                  _selectedBHK = propSize;
+                                  _selectedFurnishedType = propSize;
                                   setState(() {});
                                 },
                               ),
